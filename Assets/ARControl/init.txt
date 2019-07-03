@@ -1,1 +1,1 @@
-initialisation of the program
+initialisation of ARController
