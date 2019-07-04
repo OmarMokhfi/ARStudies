@@ -55,7 +55,7 @@ namespace IBM.Watsson.Examples
         private string _microphoneID = null;
         private AudioClip _recording = null;
         private int _recordingBufferSize = 1;
-        private int _recordingHZ = 22050;
+        private int _recordingHZ = 44500;
 
         private SpeechToTextService _service;
 
@@ -109,7 +109,7 @@ namespace IBM.Watsson.Examples
                     _service.EnableTimestamps = true;
                     _service.SilenceThreshold = 0.01f;
                     _service.MaxAlternatives = 1;
-                    _service.EnableInterimResults = true;
+                    _service.EnableInterimResults = false;
                     _service.OnError = OnError;
                     _service.InactivityTimeout = -1;
                     _service.ProfanityFilter = false;
