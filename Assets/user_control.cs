@@ -12,7 +12,7 @@ public class user_control : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-
+        closeBook();
 	}
 
 	// Update is called once per frame
